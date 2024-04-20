@@ -1,0 +1,13 @@
+gradio
+pymongo
+transformers
+icecream
+weaviate-client
+langchain
+langchain_community
+tensorflow
+torch
+pypdf
+sentence_transformers
+langchain-openai
+openai
