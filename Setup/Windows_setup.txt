@@ -1,0 +1,55 @@
+1. Install pyenv for Windows:
+    - Visit https://github.com/pyenv-win/pyenv-win and follow the installation instructions.
+
+2. Add pyenv to your PATH:
+    - Right-click on This PC -> Properties -> Advanced system settings -> Environment Variables.
+    - Under System Variables, find the PATH variable and select Edit.
+    - Add the path to your pyenv installation (e.g., `%USERPROFILE%\\.pyenv\\pyenv-win\\bin; %USERPROFILE%\\.pyenv\\pyenv-win\\shims;`).
+
+3. Install Python Version 3.11.0:
+    - Open a command prompt and execute:
+      ```
+      pyenv install 3.11.0
+      ```
+
+4. Clone your repository:
+    - Run in command prompt:
+      ```
+      git clone https://huggingface.co/spaces/Slfagrouche/Brooklyn-College-RAG-QA-BOT
+      ```
+
+5. Navigate to the cloned repository folder:
+    - Use the command:
+      ```
+      cd Brooklyn-College-RAG-QA-BOT
+      ```
+
+6. Use the installed Python version in the cloned repository folder:
+    - Execute:
+      ```
+      pyenv local 3.11.0
+      ```
+
+7. Create a virtual environment in the cloned repository folder:
+    - Execute:
+      ```
+      python -m venv .brooklyn-college-rag-qa-bot-venv
+      ```
+
+8. Activate the virtual environment:
+    - In the command prompt, run:
+      ```
+      .brooklyn-college-rag-qa-bot-venv\\Scripts\\activate
+      ```
+
+9. Install the dependencies listed in the requirements.txt file:
+    - Execute:
+      ```
+      pip install -r requirements.txt
+      ```
+
+10. Run your Gradio application:
+    - Run the command:
+      ```
+      python your_gradio_script.py
+      ```
